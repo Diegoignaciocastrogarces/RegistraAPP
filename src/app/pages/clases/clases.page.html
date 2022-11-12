@@ -1,0 +1,49 @@
+<ion-item class="animate__animated animate__fadeInLeft" >
+  <ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button menu="first" color="primary"></ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+        Clases
+      </ion-title>
+      <ion-button slot="end" fill="clear" href='../escanear'>
+        <ion-icon slot="icon-only" name="book"></ion-icon>
+      </ion-button>
+    </ion-toolbar>
+
+
+
+  </ion-header>
+  </ion-item>
+
+  <ion-content>
+
+
+    <ion-content >
+
+      <div id="faq">
+        <ul>
+          <ion-list *ngFor="let class of clases" class="animate__animated animate__fadeInLeft">
+            <li>
+              <input type="checkbox" checked>
+              <i></i>
+
+              <h4 color="primary">{{class.name}} </h4>    <h5 color="secondary">Asistencia:</h5>
+              <p>
+                Hora: {{class.hora}}
+              </p>
+              <p>Fecha: {{class.fecha}}</p>
+            </li>
+          </ion-list>
+
+        </ul>
+
+
+
+      </div>
+
+      </ion-content>
+
+  </ion-content>
+

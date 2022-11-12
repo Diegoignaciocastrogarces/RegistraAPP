@@ -1,0 +1,24 @@
+ion-img{
+  align-self: center;
+  width: 180px;
+  height: 100px;
+  padding-bottom: 25px;
+}
+
+.blueBackGr{
+  --background: rgb(8, 15, 112);
+}
+
+
+ion-footer{
+  position: absolute;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+}
+
+@media (min-aspect-ratio: 8/9) {
+  ion-footer {
+    display: none;
+  }
+}

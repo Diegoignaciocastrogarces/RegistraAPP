@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar class="blueBg">
+    <ion-title color="primary">Clases registradas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div id="faq">
+    <ul>
+      <ion-list *ngFor="let clase of clases" class="animate__animated animate__fadeInLeft">
+        <li>
+          <input type="checkbox" checked>
+          <i></i>
+
+          <h4 color="primary">{{clase.name}} </h4>    <h5 style="color: #012e55;" class="ion-padding">{{clase.fecha}}</h5>
+          <p>
+            Hora: {{clase.hora}}
+          </p>
+        </li>
+      </ion-list>
+    </ul>
+  </div>
+
+</ion-content>

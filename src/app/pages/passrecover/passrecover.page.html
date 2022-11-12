@@ -1,0 +1,43 @@
+<app-logheader></app-logheader>
+
+<ion-content>
+  <div class="ion-padding">
+    <h1>¿Olvidaste tu contraseña?</h1>
+   <p>Ingresa tu Usuario y te enviaremos un correo para cambiar la contraseña</p>
+  </div>
+
+  <div class="ion-padding" >
+    <ion-grid fixed >
+      <ion-row>
+        <ion-col size="2"></ion-col>
+        <ion-col size="8">
+          <form #LogForm="ngForm" (ngSubmit)="onSubmit(LogForm)" >
+            <h3>Ingrese tu nombre de usuario</h3>
+            <ion-item class="animate__animated animate__fadeIn">
+              <ion-label position="floating">Usuario</ion-label>
+              <ion-input type="text" required [(ngModel)]="user.username" name="recuser"></ion-input>
+            </ion-item>
+
+            <div class="ion-padding-top animate__animated animate__fadeIn">
+              <ion-button class="blueBackGr" type="submit" expand="block" [disabled]="LogForm.invalid" routerLink="../login">
+
+                Recuperar
+              </ion-button>
+              <ion-button expand="block" routerLink="../login" color="warning">
+                Volver
+              </ion-button>
+            </div>
+
+
+
+
+
+          </form>
+        </ion-col>
+        <ion-col size="2"></ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+</ion-content>
+<app-duocfooter></app-duocfooter>
